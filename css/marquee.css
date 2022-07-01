@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.marquee {
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 0 0 0 100%;
+}
+
+.marquee__track {
+  display: flex;
+  transition: transform 0.5s linear;
+}
+
+.marquee__content {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .marquee__content {
+    font-size: 35px; 
+  }
+}
+
+@media (min-width: 992px) {
+  .marquee__content {
+    font-size: 56px;
+    padding: 0 25px;
+  }
+}
